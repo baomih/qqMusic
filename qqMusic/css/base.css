@@ -1,0 +1,192 @@
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+textarea,
+p,
+table,
+img {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+form,
+input,
+button {
+    border: none;
+}
+
+html,
+body {
+    background: #F2F2F2;
+    width: 100%;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        min-width: 1200px;
+    }
+}
+
+.clearFix::before,
+.clearFix::after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont.eot');
+    /* IE9*/
+    src: url('iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome, firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+
+/*组合样式==================*/
+
+
+/*公共盒子样式*/
+
+.public_bigbox {
+    padding: 0 75px;
+    overflow: hidden;
+}
+
+
+/*公共背景色*/
+
+.public_bg {
+    background: -webkit-linear-gradient(#F2F2F2, #FAFAFA);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#F2F2F2, #FAFAFA);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#F2F2F2, #FAFAFA);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#F2F2F2, #FAFAFA);
+    /* 标准的语法 */
+}
+
+
+/*公共标题样式*/
+
+.h2_style {
+    font-size: 30px;
+    color: #333333;
+    font-weight: normal;
+    letter-spacing: 15px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+
+/*公共导航栏样式*/
+
+.main_nav {
+    height: 50px;
+    text-align: center;
+}
+
+.main_nav a {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0 24px;
+    color: #333;
+}
+
+.main_nav a:hover {
+    color: #31c27c;
+}
+
+.main_nav a.now {
+    color: #31c27c;
+}
+
+
+/* 公共轮播标注*/
+
+.pagination {
+    width: 100%;
+    height: 38px;
+    text-align: center;
+}
+
+.pagination span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #E1E1E1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.pagination span {
+    margin-right: 16px;
+}
+
+.pagination span:hover {
+    background: rgba(0, 0, 0, .3)
+}
+
+.pagination span.now {
+    background: rgba(0, 0, 0, .3)
+}
+
+
+/*公共的箭头*/
+
+.arrow {}
+
+.arrow span {
+    position: absolute;
+    top: 60px;
+    width: 77px;
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+    color: #6B6A6B;
+    background: #EEEEEE;
+    z-index: 10;
+}
+
+.arrow span:hover {
+    background: #DADADA;
+}
+
+.arrow .left {
+    left: -140px;
+}
+
+.arrow .right {
+    right: -140px;
+}
